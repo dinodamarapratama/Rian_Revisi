@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Escape Velocity by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		 <link href='css/overlaypopup.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		function notif() {
+	   var interval = setTimeout(function() {
+		var docHeight = $(document).height(); //grab the height of the page
+		$('.overlay-bg').show().css({'height' : docHeight}); //display your popup and set height to the page height
+		$('.popup'+1).show(); // show the appropriate popup
+	
+			 clearTimeout(interval,500);
+}, 500);}
+
+	   function notif2() {
+	   var interval = setTimeout(function() {
+		var docHeight = $(document).height(); //grab the height of the page
+		
+		$('.overlay-bg').show().css({'height' : docHeight}); //display your popup and set height to the page height
+		$('.popup'+2).show(); // show the appropriate popup
+			 clearTimeout(interval,500);
+}, 500);}
+
+
+</script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<script charset="utf-8" src="js/apiomat.js"></script>
+<style>
+table {
+    width:100%;
+    	font-size: 0.8125em;
+	color: #805752;
+	line-height: 1.8em;
+	padding-bottom:5px;
+}
+table, th, td {
+    border: 1px #fff;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: #DE3D4D;
+    color: white;
+}
+</style>
+	</head>
+	<body onload="signup();">
+ <div class="overlay-bg">
+<div class="overlay-content popup1"><br>
+		<p style="text-align:center">"Mohon maaf, pendaftaran untuk sementara ditutup. Jumlah pendaftar maksimal 30 orang/hari"</p>
+		
+		<img src="images/maaf.png" style=" display: block; margin-left: auto; margin-right: auto;" alt="" width="20%">
+		<br><br>
+         <button onclick="window.location.href='index.html'" class="close-btn " style=" display: block; margin-left: auto; margin-right: auto;">Beranda</button>
+		
+	</div>
+	<div class="overlay-content popup2"><br>
+		<p style="text-align:center">"Mohon maaf, pendaftaran untuk sementara ditutup dibuka kembali pada jam 19.00 WIB . Batas akhir waktu pendafataran jam 17.00 WIB"</p>
+		
+		<img src="images/alert-clock-icon.png" style=" display: block; margin-left: auto; margin-right: auto;" alt="" width="20%">
+		<br><br>
+		<button onclick="window.location.href='index.html'" class="close-btn " style=" display: block; margin-left: auto; margin-right: auto;">Beranda</button>
+		
+	</div>
+	
+</div>
+		<!-- Header -->
+			<div id="header-wrapper" class="wrapper">
+				<div id="header">
+					
+					<!-- Logo -->
+						<div id="logo">
+							
+							<img src="images/logo 2.png" width="100%">
+							
+						</div>
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Beranda</a></li>
+								
+								<li><a href="profil.html">Profil</a></li>
+								<li><a href="fasilitas.html">Fasilitas</a></li>
+								<li><a href="pendaftaran.html">Pendaftaran Service</a></li>
+						
+								<li><a href="suku_cadang.html">Suku Cadang</a></li>
+								<li><a href="lokasi.html">Lokasi</a></li>
+								<li><a href="tentang.html">Tentang</a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+		
+		
+		
+		<!-- Highlights -->
+			<div class="wrapper style3">
+				<div class="title">Pendaftaran Service</div>
+				<div id="highlights" class="container">
+				<div class="row 150%">
+						<div class="6u">
+
+							<!-- Contact Form -->
+							<h2>Form Pendaftaran</h2><br>
+								<section>
+									<form 	>
+									
+										<div class="row 50%">
+											<div class="6u">
+												<input type="text" name="name" id="q0" placeholder="Nama" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="q1" placeholder="No.Kendaraan" />
+											</div>
+										</div>
+										<div class="row 50%">
+											<div class="6u">
+												
+												 <select id="q2" class="selectBox">
+				<option class="default-text">-- Jenis Kendaraan --</option>
+				<option selected="selected" value="pelanggan">Road Bike Sport / Motor Besar</option>
+				<option value="pengusaha">Moped / Motor Bebek</option>
+				<option value="pengusaha">Skuter Matik</option>
+				 
+
+
+		        </select>
+											</div>
+
+											<div class="6u">
+												<input type="text" name="email" id="q3" placeholder="No.Telp" />
+											</div>
+										</div>
+									</form>
+									<ul class="actions">
+													<li><input type="submit" class="style1" value="Kirim" onclick="kirim()" /></li>
+													<li><input type="reset" class="style2" value="Reset" /></li>
+												</ul>
+												<br><p id="infoSend"></p>
+								</section>
+
+						</div>
+						<div class="6u">
+						
+							<!-- Contact -->
+								<section class="feature-list small">
+									
+									<div class="row 50%">
+											<div class="12u">
+												<table id="t01">
+  <tr>
+    <th>Nama</th>
+    <th>No Kendaraan</th>		
+    <th>Jenis Kendaraan</th>
+    <th>Status</th>
+  </tr>
+</table>
+											</div>
+										</div>
+									
+								</section>
+								
+						</div>
+
+					</div>
+					<section id="features">
+							<header class="style1">
+							<h2 style="display:inline-block;">Pendaftar Hari Ini</h2>
+								<h2 id="jumlah"></h2>
+								<p style="text-align:center">Maksimum Pendaftar 30/Hari</p>
+                                <p id="demo"></p>
+					
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper" class="wrapper">
+				<div class="title"></div>
+				
+				<div id="copyright">
+					<ul>
+						<li>&copy; Untitled</li><li>Design: <a >HTML5 UP</a></li>
+					</ul>
+				</div>
+			</div>
+			<script>
+ 
+
+
+   function signup()
+  {
+    var user = new Apiomat.User();
+    user.setUserName("Admin");
+    user.setPassword("1618");
+    Apiomat.Datastore.configure(user);
+    var saveCB = {
+      onOk: function() {
+     
+       
+      },
+      onError: function(error) {
+     
+      }
+    };
+    user.loadMe({
+      onOk: function() {
+     
+      loadData();
+      timeOut();
+
+      },
+      onError: function(error) {
+       
+        user.save(saveCB);
+     
+      }
+    });
+  }
+  
+  function loadData()
+  {
+   var zp = "status==" + '"' + "selesai" + '"' + " or" + " status==" + '"' + "sedang proses" + '"' + "or" + " status==" + '"' + "menunggu" + '"' ;
+   Apiomat.Pendaftaran.getPendaftarans(zp, 
+     {
+     onOk:function(bases) 
+     { for (var i=0; i < bases.length;i++) 
+     { addToData(bases[i]);}
+
+     var jumlah = document.getElementById("jumlah").innerHTML = bases.length + " Orang";
+     var kuota = bases.length;
+     if ( kuota == 30 || kuota > 30) {
+     notif();
+     }
+  },
+  onError: function(error) {
+  
+  }
+  });
+  }	
+
+  
+ 
+function addToData(base)
+  {
+    
+
+    var table = document.getElementById("t01");
+    var row=table.insertRow(1);
+    var cell1=row.insertCell(0);
+    var cell2=row.insertCell(1);
+    var cell3=row.insertCell(2);
+    var cell4=row.insertCell(3);
+    cell1.innerHTML= base.getNama() ;
+    cell2.innerHTML=base.getNo_kendaraan();
+    cell3.innerHTML=base.getJenis_kendaraan();
+    cell4.innerHTML=base.getStatus();
+
+      }
+
+
+function timeOut() {
+    if (new Date().getHours() > 17 && new Date().getHours() < 19 ) {
+        notif2();
+        deleteData();
+    }
+  
+}
+
+  function kirim() {
+
+             var infoSend = document.getElementById("infoSend").innerHTML = "Mohon Tunggu.....";
+             
+              var a= document.getElementById("q0").value;
+              var b= document.getElementById("q1").value;
+              var c= $( "#q2 option:selected" ).val();
+              var d = document.getElementById("q3").value;
+             
+                  var task = new Apiomat.Pendaftaran();
+             
+             task.setNama(a);
+             task.setNo_kendaraan(b);
+             task.setJenis_kendaraan(c);
+             task.setNo_telepon(d);
+             task.setStatus("menunggu");
+             task.save({
+             onOk: function() { 
+            
+              
+              var infoSend = document.getElementById("infoSend");
+              infoSend.innerHTML = "Data terkirim, mohon sabar menunggu konfirmasi.";
+              addToData(task);
+              location.reload();
+              },
+              onError: function(error) {
+               
+              }
+              });
+              
+            }
+
+
+
+             function deleteData()
+         {   
+         
+           Apiomat.Pendaftaran.getPendaftarans( undefined, 
+          {
+          onOk:function(datas)
+          {
+           for (var i=0; i < datas.length;i++) 
+          { addToDeleteData(datas[i]);
+          }
+          
+         },
+         onError: function() {
+       
+         }
+         });
+         
+         }    
+         
+         function addToDeleteData(data)
+         {  
+         
+           data.deleteModel ({
+           onOk: function() { 
+           
+          
+
+           },
+           onError: function(error) {
+             status.innerHTML = "Some error occured. "+ error.statusCode + " --> " + error.message;
+           }
+           });
+           }
+           
+</script>
+
+	</body>
+</html>
